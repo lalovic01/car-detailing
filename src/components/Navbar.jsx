@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { navLinks } from '../data/siteData'
 
@@ -51,9 +51,9 @@ function Navbar() {
               {item.label}
             </NavLink>
           ))}
-          <a href="/contact" className="btn btn-primary" onClick={() => setOpen(false)}>
+          <Link to="/contact" className="btn btn-primary" onClick={() => setOpen(false)}>
             Book Now
-          </a>
+          </Link>
         </div>
       </nav>
 
