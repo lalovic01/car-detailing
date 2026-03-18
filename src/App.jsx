@@ -1,5 +1,5 @@
 import { AnimatePresence } from 'framer-motion'
-import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
+import { HashRouter, Route, Routes, useLocation } from 'react-router-dom'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import useScrollToTop from './hooks/useScrollToTop'
@@ -30,7 +30,7 @@ function AppRoutes() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="site-shell">
         <Navbar />
         <main>
@@ -38,7 +38,7 @@ function App() {
         </main>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
