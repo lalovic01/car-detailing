@@ -10,9 +10,9 @@ function Services() {
       <section className="page-hero">
         <div className="container">
           <Reveal>
-            <p className="eyebrow">Our Packages</p>
-            <h1>Professional services tailored to your vehicle</h1>
-            <p>Choose from focused detailing or complete protection plans to match your goals.</p>
+            <p className="eyebrow">Naši paketi</p>
+            <h1>Profesionalne usluge prilagođene vašem vozilu</h1>
+            <p>Izaberite ciljanu uslugu detailinga ili kompletan plan zaštite prema vašim potrebama.</p>
           </Reveal>
         </div>
       </section>
@@ -28,12 +28,12 @@ function Services() {
       <section className="section section-dark">
         <div className="container split-banner">
           <Reveal>
-            <h2>Need a custom package?</h2>
-            <p>We design detailing plans around your vehicle condition, usage, and desired finish.</p>
+            <h2>Potreban vam je paket po meri?</h2>
+            <p>Kreiramo detailing plan prema stanju vozila, načinu upotrebe i željenom završnom efektu.</p>
           </Reveal>
           <Reveal delay={0.1}>
             <Link className="btn btn-primary" to="/contact">
-              Request Consultation
+              Zatraži konsultaciju
             </Link>
           </Reveal>
         </div>

@@ -17,15 +17,15 @@ function Contact() {
     const nextErrors = {}
 
     if (!form.name.trim() || form.name.trim().length < 2) {
-      nextErrors.name = 'Please enter your full name.'
+      nextErrors.name = 'Unesite ime i prezime.'
     }
 
     if (!/^\+?[\d\s()-]{7,}$/.test(form.phone.trim())) {
-      nextErrors.phone = 'Please enter a valid phone number.'
+      nextErrors.phone = 'Unesite ispravan broj telefona.'
     }
 
     if (!form.message.trim() || form.message.trim().length < 10) {
-      nextErrors.message = 'Please write at least 10 characters.'
+      nextErrors.message = 'Unesite najmanje 10 karaktera.'
     }
 
     return nextErrors
@@ -47,9 +47,9 @@ function Contact() {
       <section className="page-hero">
         <div className="container">
           <Reveal>
-            <p className="eyebrow">Contact Us</p>
-            <h1>Book your detailing session</h1>
-            <p>Call us directly or send a request and we will confirm your appointment quickly.</p>
+            <p className="eyebrow">Kontaktirajte nas</p>
+            <h1>Zakažite svoj detailing termin</h1>
+            <p>Pozovite nas direktno ili pošaljite upit, a mi ćemo brzo potvrditi vaš termin.</p>
           </Reveal>
         </div>
       </section>
@@ -57,21 +57,21 @@ function Contact() {
       <section className="section">
         <div className="container contact-grid">
           <Reveal>
-            <h2>Send a booking request</h2>
+            <h2>Pošaljite zahtev za zakazivanje</h2>
             <form className="contact-form" onSubmit={onSubmit} noValidate>
               <label>
-                Name
+                Ime i prezime
                 <input
                   type="text"
                   value={form.name}
                   onChange={(event) => setForm((prev) => ({ ...prev, name: event.target.value }))}
-                  placeholder="John Doe"
+                  placeholder="Petar Petrović"
                 />
                 {errors.name && <small>{errors.name}</small>}
               </label>
 
               <label>
-                Phone
+                Telefon
                 <input
                   type="tel"
                   value={form.phone}
@@ -82,30 +82,30 @@ function Contact() {
               </label>
 
               <label>
-                Message
+                Poruka
                 <textarea
                   rows="5"
                   value={form.message}
                   onChange={(event) => setForm((prev) => ({ ...prev, message: event.target.value }))}
-                  placeholder="Tell us your vehicle model and service goal..."
+                  placeholder="Napišite model vozila i koju uslugu želite..."
                 />
                 {errors.message && <small>{errors.message}</small>}
               </label>
 
               <button className="btn btn-primary" type="submit">
-                Submit Request
+                Pošalji zahtev
               </button>
 
-              {submitted && <p className="form-success">Thank you. We will contact you soon to confirm your booking.</p>}
+              {submitted && <p className="form-success">Hvala. Kontaktiraćemo vas uskoro radi potvrde termina.</p>}
             </form>
           </Reveal>
 
           <Reveal delay={0.08} className="contact-info">
-            <h3>Direct Booking</h3>
-            <p>Phone: +381 60 123 4567</p>
+            <h3>Direktno zakazivanje</h3>
+            <p>Telefon: +381 60 123 4567</p>
             <p>Email: booking@blacklinedetail.com</p>
-            <p>Location: New Belgrade, Serbia</p>
-            <div className="map-placeholder">Map Placeholder</div>
+            <p>Lokacija: Jabuka, Srbija</p>
+            <div className="map-placeholder">Mapa lokacije</div>
           </Reveal>
         </div>
       </section>

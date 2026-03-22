@@ -10,7 +10,7 @@ function ServiceCard({ service, delay = 0 }) {
           <li key={benefit}>{benefit}</li>
         ))}
       </ul>
-      <span className="price-tag">From {service.price}</span>
+      <span className="price-tag">Od {service.price}</span>
     </Reveal>
   )
 }

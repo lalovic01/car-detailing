@@ -12,17 +12,17 @@ function Home() {
       <section className="hero-section">
         <div className="container hero-grid">
           <Reveal>
-            <p className="eyebrow">Luxury Auto Detailing</p>
-            <h1>Bring your car back to showroom perfection</h1>
+            <p className="eyebrow">Luksuzni auto detailing</p>
+            <h1>Vratite svoj automobil u salonsko stanje</h1>
             <p className="hero-text">
-              Precision detailing, paint correction, and ceramic protection designed for discerning owners.
+              Precizan detailing, korekcija laka i keramička zaštita za vlasnike koji očekuju vrhunski rezultat.
             </p>
             <div className="hero-actions">
               <Link className="btn btn-primary" to="/contact">
-                Book Now
+                Zakaži odmah
               </Link>
               <Link className="btn btn-outline" to="/services">
-                Explore Services
+                Pogledaj usluge
               </Link>
             </div>
           </Reveal>
@@ -30,7 +30,7 @@ function Home() {
           <Reveal delay={0.1} className="hero-media">
             <img
               src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1400&q=80"
-              alt="Luxury car under detailing lights"
+              alt="Luksuzni automobil pod detailing osvetljenjem"
               loading="eager"
             />
           </Reveal>
@@ -40,9 +40,9 @@ function Home() {
       <section className="section">
         <div className="container intro-panel">
           <Reveal>
-            <h2>Detailing beyond the standard wash</h2>
+            <h2>Detailing koji prevazilazi obično pranje</h2>
             <p>
-              Every package is engineered to improve gloss, preserve value, and deliver a premium ownership experience.
+              Svaki paket je osmišljen da pojača sjaj, sačuva vrednost vozila i pruži premijum iskustvo vlasništva.
             </p>
           </Reveal>
 
@@ -63,7 +63,7 @@ function Home() {
       <section className="section section-dark">
         <div className="container">
           <Reveal>
-            <h2>Service Preview</h2>
+            <h2>Pregled usluga</h2>
           </Reveal>
           <div className="services-grid">
             {services.map((service, index) => (
@@ -76,7 +76,7 @@ function Home() {
       <section className="section">
         <div className="container">
           <Reveal>
-            <h2>Client Testimonials</h2>
+            <h2>Utisci klijenata</h2>
           </Reveal>
           <div className="testimonial-grid">
             {testimonials.map((item, index) => (
@@ -89,10 +89,10 @@ function Home() {
       <section className="section cta-band">
         <div className="container cta-inner">
           <Reveal>
-            <h2>Your next detail is one click away</h2>
-            <p>Reserve your appointment and let us restore depth, shine, and protection.</p>
+            <h2>Vaš sledeći detailing je na jedan klik</h2>
+            <p>Rezervišite termin i prepustite nam vraćanje dubine boje, sjaja i zaštite.</p>
             <Link className="btn btn-primary" to="/contact">
-              Book Your Slot
+              Rezerviši termin
             </Link>
           </Reveal>
         </div>

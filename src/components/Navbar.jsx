@@ -25,7 +25,7 @@ function Navbar() {
 
   return (
     <header className={`site-header ${scrolled ? 'scrolled' : ''}`}>
-      <nav className="container nav-shell" aria-label="Main navigation">
+      <nav className="container nav-shell" aria-label="Glavna navigacija">
         <NavLink to="/" className="brand" onClick={() => setOpen(false)}>
           <span className="brand-mark" aria-hidden="true" />
           Blackline Detail
@@ -35,7 +35,7 @@ function Navbar() {
           className="menu-toggle"
           onClick={() => setOpen((value) => !value)}
           aria-expanded={open}
-          aria-label="Toggle navigation menu"
+          aria-label="Otvori ili zatvori navigacioni meni"
         >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -52,7 +52,7 @@ function Navbar() {
             </NavLink>
           ))}
           <Link to="/contact" className="btn btn-primary" onClick={() => setOpen(false)}>
-            Book Now
+            Zakaži odmah
           </Link>
         </div>
       </nav>

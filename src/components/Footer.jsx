@@ -6,35 +6,35 @@ function Footer() {
       <div className="container footer-grid">
         <div>
           <h3>Blackline Detail</h3>
-          <p>Premium auto detailing, polishing, and ceramic protection for owners who expect perfection.</p>
+          <p>Premijum auto detailing, poliranje i keramička zaštita za vlasnike koji očekuju savršenstvo.</p>
         </div>
 
         <div>
-          <h4>Quick Links</h4>
+          <h4>Brzi linkovi</h4>
           <ul>
             <li>
-              <Link to="/services">Services</Link>
+              <Link to="/services">Usluge</Link>
             </li>
             <li>
-              <Link to="/gallery">Gallery</Link>
+              <Link to="/gallery">Galerija</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about">O nama</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact">Kontakt</Link>
             </li>
           </ul>
         </div>
 
         <div>
-          <h4>Contact</h4>
+          <h4>Kontakt</h4>
           <p>+381 60 123 4567</p>
           <p>booking@blacklinedetail.com</p>
-          <p>Belgrade, Serbia</p>
+          <p>Jabuka, Srbija</p>
         </div>
       </div>
-      <p className="copyright">© {new Date().getFullYear()} Blackline Detail. All rights reserved.</p>
+      <p className="copyright">© {new Date().getFullYear()} Blackline Detail. Sva prava zadržana.</p>
     </footer>
   )
 }

@@ -8,10 +8,10 @@ function About() {
       <section className="page-hero">
         <div className="container">
           <Reveal>
-            <p className="eyebrow">Our Story</p>
-            <h1>Built for owners who notice every detail</h1>
+            <p className="eyebrow">Naša priča</p>
+            <h1>Stvoreno za vlasnike koji primećuju svaki detalj</h1>
             <p>
-              Blackline Detail started as a one-bay studio focused on correction and protection for premium daily-driven vehicles.
+              Blackline Detail je počeo kao mali studio fokusiran na korekciju i zaštitu premijum vozila za svakodnevnu vožnju.
             </p>
           </Reveal>
         </div>
@@ -20,28 +20,28 @@ function About() {
       <section className="section">
         <div className="container about-grid">
           <Reveal>
-            <h2>Experience and craftsmanship</h2>
+            <h2>Iskustvo i posvećenost zanatu</h2>
             <p>
-              With years of hands-on detailing, we combine modern paint-care techniques with strict process control. Every car is
-              inspected under professional lighting before, during, and after the service.
+              Sa dugogodišnjim praktičnim iskustvom u detailingu, spajamo moderne tehnike nege laka sa strogom kontrolom procesa.
+              Svaki automobil pregledamo pod profesionalnim osvetljenjem pre, tokom i nakon usluge.
             </p>
             <p>
-              We are obsessed with consistency, clear communication, and premium presentation, from first contact to final handover.
+              Posvećeni smo doslednosti, jasnoj komunikaciji i premijum prezentaciji, od prvog kontakta do konačne primopredaje.
             </p>
           </Reveal>
 
           <Reveal delay={0.08} className="about-stats">
             <div>
               <strong>1,200+</strong>
-              <span>Vehicles Detailed</span>
+              <span>Detaljno obrađenih vozila</span>
             </div>
             <div>
               <strong>7+</strong>
-              <span>Years Experience</span>
+              <span>Godina iskustva</span>
             </div>
             <div>
               <strong>4.9/5</strong>
-              <span>Average Rating</span>
+              <span>Prosečna ocena</span>
             </div>
           </Reveal>
         </div>
@@ -50,12 +50,12 @@ function About() {
       <section className="section section-dark">
         <div className="container split-banner">
           <Reveal>
-            <h2>Trust your car to proven professionals</h2>
-            <p>From weekend sports cars to executive daily drivers, we treat every vehicle with the same precision.</p>
+            <h2>Poverite svoj automobil dokazanim profesionalcima</h2>
+            <p>Od vikend sportskih automobila do poslovnih vozila za svaki dan, svakom pristupamo sa istom preciznošću.</p>
           </Reveal>
           <Reveal delay={0.1}>
             <Link className="btn btn-primary" to="/contact">
-              Schedule Appointment
+              Zakaži termin
             </Link>
           </Reveal>
         </div>

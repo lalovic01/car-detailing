@@ -20,8 +20,8 @@ function Gallery() {
         <div className="container">
           <Reveal>
             <p className="eyebrow">Portfolio</p>
-            <h1>Real transformations, refined finishes</h1>
-            <p>Browse before and after moments from correction, interior restoration, and coating jobs.</p>
+            <h1>Stvarne transformacije, vrhunski finiš</h1>
+            <p>Pogledajte trenutke pre i posle korekcije laka, obnove enterijera i nanošenja zaštitnih premaza.</p>
           </Reveal>
         </div>
       </section>
@@ -56,7 +56,7 @@ function Gallery() {
               transition={{ duration: 0.2 }}
               onClick={(event) => event.stopPropagation()}
             >
-              <button className="lightbox-close" onClick={() => setActiveIndex(null)} aria-label="Close image modal">
+              <button className="lightbox-close" onClick={() => setActiveIndex(null)} aria-label="Zatvori prikaz slike">
                 <X size={20} />
               </button>
               <img src={activeImage.src} alt={activeImage.alt} loading="eager" />
